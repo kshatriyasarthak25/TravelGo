@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup Page</title>
+    <style>
+        h1{
+            margin: 0%;
+            padding: 2%;
+        text-align: center; 
+        font-size: 300%;
+        color: white;
+        background-color: darkorange ;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: grey;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+
+        .image{
+            float: center;
+
+        }
+        
+
+        input[type="text"], input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .login-form-title {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .sub{
+            text-align: center;
+            margin-top: 4%;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif ;"> 
+        
+        TRAVEL GO 
+    
+    </h1>
+    <div class="login">
+        <h2 class="login-form-title">SignUp</h2>
+        
+        <form action="/signup" method="POST">
+            <label for="NAME">NAME</label>
+            <input type="text" name="name" required placeholder="Enter  your name">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" Email="email" required placeholder="Enter  your mail ID">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Create your username">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required placeholder="create Your Password">
+            <label for="password">Confirm Password:</label>
+            <input type="password" id="confirm password" confirm password="password" required placeholder="Confirm Your Password">
+            <br>
+            <div class="sub">
+            <input type="submit" value="Create your account">
+            </div>
+    
+        
+        </form>
+    </div>
+   
+</body>
+</html>
